@@ -1,0 +1,444 @@
+body {
+    background-color: #F9F9F9;
+    background-image: url('');
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a{
+    text-decoration: none; 
+    color: #1c1e53;       /* color here */         
+    transition: color 0.3s ease;
+}
+
+a:hover{
+    color: #F49636;
+}
+
+id:hover{
+    color: #F49636;
+}
+
+
+h5{
+    font-size: 20px;
+}
+
+li{
+    list-style: none;
+}
+
+.log{
+    border-radius: 180px;
+    border: 1px solid #000;   /* color here */
+    width: 80px;
+    height: 80px;
+}
+
+span{
+    color:#F49636;   /* color here */
+    font-size: 13px;
+}
+
+h3{
+    font-size: 15px;
+}
+
+nav{
+    background-color: #D8E7CA;   /* color here */
+    position: sticky; 
+    top: 0;
+    padding: 0 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 5px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    height: 55px;
+    flex-shrink: 0;
+}
+
+nav .logo,
+footer .logo{
+    display: flex;
+    align-items: center;
+}
+
+nav .logo a,
+footer .logo a{
+    margin-left: 8px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav .logo img,
+footer .logo img{
+    width: 50px;
+    height: 50px;
+}
+
+nav ul,
+footer .top ul{
+    display: flex;
+    gap: 40px;
+}
+
+nav button{
+    color: #534d1c;
+    background-color: transparent;
+    padding: 12px 16px;
+    border-radius: 5px;
+    border: 1px solid #1c1e53;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+nav button:hover{
+    background-color: #F49636;
+    border-color: #F49636;
+    color: #fff;
+}
+
+nav button#menuButton{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    padding: 7px;
+}
+
+.list{
+    color: #000000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main{
+    padding: 90px 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.main .left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.main .left h1{
+    margin-top: 30px;
+    margin-bottom: -10px;
+    font-weight: bold;
+    font-size: 45px;
+    color: #232522;
+    stroke: .5px, rgb(255, 0, 0);   /* color here */
+    font-family: Brush Script MT;
+}
+
+.main .left h3{
+    margin-top: 20px;
+    margin-bottom: -10px;
+    font-size: 30px;
+    color: #100000; /* color here */
+    font-family: Brush Script MT;
+}
+
+.main .right h1{
+    right: 100px;
+    text-align: center; 
+    color: green;     /* color here */
+}
+
+.main .right .left1{
+    text-align: center;
+    color: green;     /* color here */
+}
+
+.main .right img{
+    width: 274px;
+    height: 288px;
+    flex-shrink: 0;
+    border-radius: 41px;
+    border: 1px solid #000;
+}
+
+.right img{
+    width: 274px;
+    height: 288px;
+    flex-shrink: 0;
+    border-radius: 41px;
+    border: 1px solid #000;
+}
+
+.main .left img{
+    width: 274px;
+    height: 288px;
+    flex-shrink: 0;
+    border-radius: 41px;
+    border: 1px solid #000;
+}
+
+.portfolio .header h3{
+    font-size: 30px;
+    margin-top: 20px;
+    color: #AFD198;   /* color here */
+}
+
+.about{
+    padding: 110px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.about .left{
+    border-radius: 10px 10px 0 0;
+}
+
+.about .left img{
+    width: 440px;
+}
+
+.about .right p{
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.portfolio{
+    padding: 110px 85px;
+}
+
+.portfolio .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.portfolio .portfo-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.portfolio .portfo-items .item{
+    height: 380px;
+    width: 280px;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    border-bottom: 4px solid transparent;
+    cursor: pointer;
+    box-shadow: 0 5px 32px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    display: grid; 
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio .portfo-items .item:hover{
+    border-color: #F49636;
+}
+
+.portfolio .portfo-items .item img{
+    width: 190px;
+    height: 150px;
+    margin-top: 10px;
+    left: 100px;
+    object-fit: fill;
+    object-position: center;
+    border-radius: 50px;
+    border: 1px solid #000;
+}
+
+.portfolio .portfo-items .item .info{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 20px 32px 42px;
+}
+
+.portfolio .portfo-items .item .info p{
+    font-size: 13px;
+}
+
+.portfolio .portfo-items .item .info a{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: #5e3bee;
+}
+
+.portfolio .portfo-items .item .info a i{
+    margin-left: 2px;
+    font-size: 16px;
+}
+/*
+#popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; 
+    filter: drop-shadow(20px 20px 50px #494949);
+    border: solid 1px;
+    border-radius: 5px;
+}
+ */
+#cord {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .Cardo {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform: perspective(2500px);
+    transition: 1s;
+  }
+  
+  .Cardo:hover {
+    transform: perspective(2500px) rotate(5deg);
+    box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2),
+      0 10px 100px rgba(0, 0, 0, 0.5);
+  }
+  
+  .Cardo:hover .front {
+    transform: rotateY(-160deg);
+  }
+  
+  .Cardo:hover .happy {
+    visibility: hidden;
+  }
+  
+  .front {
+    position: relative;
+    background-color: #B0C5A4;     /* color here */
+    width: 280px;
+    height: 380px;
+    overflow: hidden;
+    transform-origin: left;
+    box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2),
+      30px 0 50px rgba(0, 0, 0, 0.4);
+    transition: 0.6s;
+  }
+  
+  .happy {
+    font-family: "Cambria, Cochin";
+    font-size: 25px; 
+    color: #9B4444;               /* color here */
+    text-align: center;
+    margin: 30px;
+    background-image: linear-gradient(120deg, #B0C5A4 0%, #EBC49F, #D37676 100%);    /* color here */
+    transition: 0.1s;
+    border-radius: 20px;
+  }
+  
+  .spalad {
+    position: absolute;
+  }
+
+  .snorlax {
+   position: absolute;
+   }
+
+  .snorlax::before{
+   position: absolute;
+   }
+
+  .snorlax::after{
+   position: absolute;
+   }
+  #snorsize{
+    height: 350px;
+    width: 290px;
+  }
+  
+  .inside {
+    position: absolute;
+    background-color: #B0C5A4;        /* color here */
+    width: 280px;
+    height: 380px;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2);
+  } 
+
+  .titlee{
+    color: #9B4444;          /* color here */
+    font-family: "Brush Script MT";
+  }
+  p {
+    font-family: "Brush Script MT";
+    font-size: 25px;
+    margin: 15px;
+    color: #333;            /* color here */
+  }
+  
+  .back {
+    font-family: "Cambria, Cochin";
+    font-size: 22px;
+    color: #9B4444;          /* color here */
+    text-align: center;
+    margin: 30px;
+    outline-color: #B3C8CF;          /* color here */
+    outline-style: dotted;
+    border-radius: 20px;
+  }
+
+  .pokemon {
+    position: absolute;
+    left: 150px;
+    top: 300px;
+    color: #9B4444;          /* color here */
+  }
+
+  footer{
+    background-color: #D8E7CA;  /* color here */
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+footer .top,
+footer .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .top .social-links{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+}
+
+footer .bottom p{
+    font-size: 12px;
+}
+
+footer .bottom .links a{
+    font-size: 12px;
+    margin-left: 14px;
+}
